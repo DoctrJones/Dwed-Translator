@@ -1,9 +1,12 @@
 # Start here!
-These are the base files necessary for running the Dwed Translator Application, not including the required Python libraries required for running. This distribution is designed to be run from a Python IDE of your choosing.
+These are the base files necessary for running the Dwed Translator Application, not including the required Python libraries required for running. This distribution is designed to be run from a Python IDE of your choosing. [I use PyCharm](https://www.jetbrains.com/pycharm/), but it's dealer's choice.
 
 ### **How to use:**
 
 These files must all reside in the same directory in order to be used.
+
+![image](https://github.com/DoctrJones/Dwed-Translator/assets/161623020/9763ed59-cea8-44d8-a503-ceef65587e1e)
+
 
 ![image](https://github.com/DoctrJones/Dwed-Translator/assets/161623020/fa82c9b5-3aa5-4b51-a25d-1b5c81736f6f)
 
@@ -30,7 +33,8 @@ To install the libraries needed for running this program, please run these pip c
 # File Breakdown
 
 1) DICTIONARY_dwed.xlsx : This is the raw "dictionary", in .xlsx format.
-  - Column A has two languages, english and dwed. Each row in this column corresponds to the language in the proceeding columns. Example: A1 (English) = Column B (English), A2 (Dwed) = Column C (Dwed), etc. If you wish to edit this file for a different language (Example, add Spanish <-> Dwed functionality), you'd add "spanish" to A3, then the corresponding Spanish words to Column D.
+    - Column A has two languages, english and dwed. Each row in this column corresponds to the language in the proceeding columns. Example: A1 (English) = Column B (English), A2 (Dwed) = Column C (Dwed), etc. If you wish to edit this file for a different language (Example, add Spanish <-> Dwed functionality), you'd add "spanish" to A3, then the corresponding Spanish words to Column D.
+    - This can be edited at any time, however I would advise against fiddling too much.
 
 2) DwedTranslator_v2_1.py : This is the main file that runs/handles the GUI
 
