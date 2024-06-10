@@ -1,6 +1,21 @@
 # Start here!
 These are the base files necessary for running the Dwed Translator Application, not including the required Python libraries required for running. This distribution is designed to be run from a Python IDE of your choosing.
 
+### **How to use:**
+
+These files must all reside in the same directory in order to be used.
+
+![image](https://github.com/DoctrJones/Dwed-Translator/assets/161623020/fa82c9b5-3aa5-4b51-a25d-1b5c81736f6f)
+
+- The first entry window is the Source Window, this is where you would enter what you want translated. Currently, only supports English and Dwed entries
+
+- The second entry window, which appears below, is the result of translation (AKA Target Window). The contents of this window are copied to your machine's clipboard for convenience. Note, words with multiple meanings will be encased in ' [ ] ', it's up to _**YOU**_ to determine which word to use. Additionally, any word entered in the Source Window that does NOT have a translation in the dictionary will result in an **[x]** in the Target Window.
+
+- Source Language is the language used in the Source Window
+
+- Target Language is the language output in the Target Window
+
+- The Dwedic Runes checkbox will change the output of the Target Window to be in Elder Futharc runes, as opposed to Latin script.
 
 # Library Installs
 To install the libraries needed for running this program, please run these pip commands:
