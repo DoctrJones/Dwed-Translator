@@ -1,7 +1,16 @@
 # Start here!
 These are the base files necessary for running the Dwed Translator Application, not including the required Python libraries required for running. This distribution is designed to be run from a Python IDE of your choosing. [I use PyCharm](https://www.jetbrains.com/pycharm/), but it's dealer's choice.
 
-### **How to use:**
+# Library Installs
+To install the libraries needed for running this program, please run these pip commands:
+
+(Note, this can be done either in your IDE's console, or from your command terminal [if you have it set up that way, idk you're probably a smart cookie and can figure it out])
+
+`pip install openpyxl`
+
+`pip install tkinter`
+
+# **How to use:**
 
 These files must all reside in the same directory in order to be used.
 
@@ -19,15 +28,6 @@ These files must all reside in the same directory in order to be used.
 - Target Language is the language output in the Target Window
 
 - The Dwedic Runes checkbox will change the output of the Target Window to be in Elder Futharc runes, as opposed to Latin script.
-
-# Library Installs
-To install the libraries needed for running this program, please run these pip commands:
-
-(Note, this can be done either in your IDE's console, or from your command terminal [if you have it set up that way, idk you're probably a smart cookie and can figure it out])
-
-`pip install openpyxl`
-
-`pip install tkinter`
 
 
 # File Breakdown
