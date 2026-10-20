@@ -3,7 +3,7 @@ Dwed Sentence Renderer
 ======================
 Pure-logic module that takes a structured sentence description (a Python dict)
 and produces a grammatically-correct Dwed string according to the rules laid
-out in the Codex of Dwarven Grammar (4th Edition).
+out in the Encyclopedia of Dwarven Language (4th Edition).
 
 No UI, no I/O, no dictionary lookup. This is the compiler. Input goes in as a
 fully-specified dict; string comes out. Every rule from the Codex should be
@@ -17,7 +17,7 @@ Design philosophy:
     - Nothing here silently guesses or "corrects" — if the input is malformed,
       tough shit.
 
-—Benjamin Hansen / Ferek Frostbeard
+—B.Hansen / _Indy / Ferek Frostbeard
 """
 
 
