@@ -1,8 +1,5 @@
 """
 Dwed runes — Latin-to-runic transliteration (ahld'rhun).
-
-Moved out of UTA_DWED_Class_v3_Claude.py so the translator no longer needs
-the legacy Excel libraries just to draw runes.
 """
 
 FUTHARK_ALPHABET = {
