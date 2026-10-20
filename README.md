@@ -1,13 +1,16 @@
 # Dwed Translator v3.2
+## Preface
+This is the result of several years of on-and-off work, refining methods, all for the sake of making the Dwed language more accessible for the common dwed player. There will be typos, and God help anyone who looks under the hood at my spaghetti code... I tried to make it clean and readable but my skills as a programmer have evolved quite a bit over the years, so some parts will be difficult to parse. Since I have worked on this entirely on my own, I'm sure others would be able to improve substantially upon what foundation I have laid. In any event, here is the sum of my work:
 
-A translator for **Dwed** (*Venekmar Dwedmarrum*), the language of the Dwed, a fantasy race of dwarves from [LotC](https://www.lordofthecraft.net/). Dwed was originally documented by chaotikal and has since been extensively expanded and formalized by me, B. Hansen (_Indy / Ferek Frostbeard). It draws on Warhammer Fantasy's Khazalid, Old Norse and Old Germanic roots, and the dictionary now holds over a thousand entries.
+## Introduction
+This is a translator for **Dwed** (*Venekmar Dwedmarrum*), the language of the Dwed, a fantasy race of dwarves from [LotC](https://www.lordofthecraft.net/). Dwed was originally documented by chaotikal and has since been extensively expanded and formalized by me, B. Hansen (_Indy / Ferek Frostbeard). It draws on Warhammer Fantasy's Khazalid, Old Norse and Old Germanic roots, and the dictionary now holds over a thousand entries.
 
 The app has two tabs:
 
 - **Dictionary**: word-for-word translation between English and Dwed, with optional runic output.
-- **Sentence Builder**: a grammar-aware composer that walks you through tense, subject, verb, object and modifiers, and builds a properly formed Dwed sentence following the *Enecyclopedia of Dwarven Language*.
+- **Sentence Builder**: a grammar-aware composer that walks you through tense, subject, verb, object and modifiers, and builds a properly formed Dwed sentence following the *Encyclopedia of Dwarven Language*.
 
-<img width="500" height="752" alt="Dictionary Tab" src="https://github.com/user-attachments/assets/cbed9f80-ac49-48c8-9097-4495a558724f" /> <img width="500" height="751" alt="Sentence Tab" src="https://github.com/user-attachments/assets/2221376a-9382-45c3-a43d-c9830f108ea1" />
+<img width="400" height="650" alt="Dictionary Tab" src="https://github.com/user-attachments/assets/cbed9f80-ac49-48c8-9097-4495a558724f" /> <img width="400" height="650" alt="Sentence Tab" src="https://github.com/user-attachments/assets/2221376a-9382-45c3-a43d-c9830f108ea1" />
 
 
 
