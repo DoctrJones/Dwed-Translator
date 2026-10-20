@@ -1,20 +1,23 @@
 # Dwed Translator v3.2
 
-A translator for **Dwed** (*Venekmar Dwedmarrum*), the language of the Dwed, a fantasy race of dwarves. Dwed was originally documented by chaotikal and has since been extensively expanded and formalized by me, B. Hansen (_Indy / Ferek Frostbeard). It draws on Warhammer Fantasy's Khazalid, Old Norse and Old Germanic roots, and the dictionary now holds over a thousand entries.
+A translator for **Dwed** (*Venekmar Dwedmarrum*), the language of the Dwed, a fantasy race of dwarves from [LotC](https://www.lordofthecraft.net/). Dwed was originally documented by chaotikal and has since been extensively expanded and formalized by me, B. Hansen (_Indy / Ferek Frostbeard). It draws on Warhammer Fantasy's Khazalid, Old Norse and Old Germanic roots, and the dictionary now holds over a thousand entries.
 
 The app has two tabs:
 
 - **Dictionary**: word-for-word translation between English and Dwed, with optional runic output.
-- **Sentence Builder**: a grammar-aware composer that walks you through tense, subject, verb, object and modifiers, and builds a properly formed Dwed sentence following the *Codex of Dwarven Grammar* (4th Edition).
+- **Sentence Builder**: a grammar-aware composer that walks you through tense, subject, verb, object and modifiers, and builds a properly formed Dwed sentence following the *Enecyclopedia of Dwarven Language*.
 
-<!-- Screenshots of both tabs go here -->
+<img width="500" height="752" alt="Dictionary Tab" src="https://github.com/user-attachments/assets/cbed9f80-ac49-48c8-9097-4495a558724f" /> <img width="500" height="751" alt="Sentence Tab" src="https://github.com/user-attachments/assets/2221376a-9382-45c3-a43d-c9830f108ea1" />
+
+
+
 
 # Start here!
 
 ## Requirements
 
-- **Python 3** (3.8 or newer) with **Tkinter**.
-- That's it. No `pip install` needed; everything else is in Python's standard library.
+- **Python 3** [(3.8 or newer)](https://www.python.org/downloads/) with **Tkinter**.
+That's it. No `pip install` needed; everything else is in Python's standard library.
 
 Tkinter comes bundled with the Python installers from [python.org](https://www.python.org/downloads/) on Windows and macOS. A few setups ship it separately:
 
@@ -32,6 +35,7 @@ Not sure? Run `python -c "import tkinter"`. If it prints nothing, you're good.
    ```
    python DwedTranslator_v3_2.py
    ```
+<img width="607" height="197" alt="image" src="https://github.com/user-attachments/assets/976bce3f-110f-4f6d-b788-5ab83e620abe" />
 
 No IDE required, though any IDE works fine too (I use [PyCharm](https://www.jetbrains.com/pycharm/), but it's dealer's choice). If something goes wrong at startup, the error appears in a popup instead of the window vanishing.
 
