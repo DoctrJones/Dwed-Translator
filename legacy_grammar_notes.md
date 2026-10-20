@@ -1,7 +1,7 @@
 # Legacy Grammar Notes (Dictionary v2.1)
 
 These notes were stored as rows in the old Excel dictionary. They predate the
-Codex of Dwarven Grammar (4th Edition), which supersedes them; they are kept
+*Encyclopedia of Dwarven Language*, which supersedes them; they are kept
 here for historical reference only.
 
 ## verb
