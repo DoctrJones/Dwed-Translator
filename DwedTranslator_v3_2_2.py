@@ -6,6 +6,7 @@ grammatical decisions in the Codex of Dwarven Grammar (4th Edition) and
 produces properly-formed Dwed sentences via the dwed_renderer module.
 -Dictionary now stored as a plain UTF-8 CSV (DICTIONARY_dwed.csv); no Excel
 or third-party libraries required.
+-Adds a Runes tab that transliterates typed text into Dwedic runes as you type.
 
 -----------------------------------------------------------------------------------------------------------------------
 =Header Info=
@@ -45,7 +46,7 @@ from dwed_runes import english_to_runic
 
 # Resolve next to this script, so it works no matter which folder Python starts in
 # (double-click, "Open with", a terminal elsewhere, or an IDE).
-DICTIONARY_FILE = Path(__file__).resolve().parent / "DICTIONARY_dwed.csv"
+DICTIONARY_FILE = Path(__file__).resolve().parent / "DICTIONARY_dwed_3511.csv"
 
 
 # =============================================================================
@@ -931,6 +932,53 @@ class SentenceBuilderTab(ttk.Frame):
 
 
 # =============================================================================
+# RUNES TAB
+# =============================================================================
+
+class RunesTab(ttk.Frame):
+    """Live transliteration: whatever is typed above appears in runes below."""
+
+    def __init__(self, parent):
+        super().__init__(parent, padding=10)
+        self._build_widgets()
+
+    def _build_widgets(self):
+        ttk.Label(self, text="Common -> ᚱᚢᚾᛖᛊ",
+                  font="none 12 bold").pack(pady=(0, 8))
+
+        self.entry_text = scrolledtext.ScrolledText(
+            self, width=40, height=10, wrap=WORD, bg="white")
+        self.entry_text.pack(fill=BOTH, expand=True)
+        # <<Modified>> also catches paste, cut, and undo, which key events miss.
+        self.entry_text.bind("<<Modified>>", self._on_modified)
+
+        self.output_text = scrolledtext.ScrolledText(
+            self, width=40, height=10, wrap=WORD, bg="white",
+            font="none 12 bold", state=DISABLED)
+        self.output_text.pack(fill=BOTH, expand=True, pady=(8, 4))
+
+        ttk.Button(self, text="Copy", command=self._copy_output).pack(side=LEFT)
+
+    def _on_modified(self, event=None):
+        # Tk only fires <<Modified>> again after the flag has been reset.
+        if not self.entry_text.edit_modified():
+            return
+        self.entry_text.edit_modified(False)
+
+        output = english_to_runic(self.entry_text.get("1.0", "end-1c"))
+        self.output_text.configure(state=NORMAL)
+        self.output_text.delete("1.0", END)
+        self.output_text.insert(END, output)
+        self.output_text.configure(state=DISABLED)
+
+    def _copy_output(self):
+        text = self.output_text.get("1.0", "end-1c")
+        if text:
+            self.clipboard_clear()
+            self.clipboard_append(text)
+
+
+# =============================================================================
 # APPLICATION SHELL
 # =============================================================================
 
@@ -950,9 +998,11 @@ class DwedTranslatorApp(Tk):
 
         self.dictionary_tab = DictionaryTab(notebook, lexicon)
         self.sentence_tab = SentenceBuilderTab(notebook, lexicon)
+        self.runes_tab = RunesTab(notebook)
 
         notebook.add(self.dictionary_tab, text="Dictionary")
         notebook.add(self.sentence_tab, text="Sentence Builder")
+        notebook.add(self.runes_tab, text="Runes")
 
 
 if __name__ == "__main__":
