@@ -3,12 +3,13 @@
 This is the result of several years of on-and-off work, refining methods, all for the sake of making the Dwed language more accessible for the common dwed player. There will be typos, and God help anyone who looks under the hood at my spaghetti code... I tried to make it clean and readable but my skills as a programmer have evolved quite a bit over the years, so some parts will be difficult to parse. Since I have worked on this entirely on my own, I'm sure others would be able to improve substantially upon what foundation I have laid. In any event, here is the sum of my work:
 
 ## Introduction
-This is a translator for **Dwed** (*Venekmar Dwedmarrum*), the language of the Dwed, a fantasy race of dwarves from [LotC](https://www.lordofthecraft.net/). Dwed was originally documented by chaotikal and has since been extensively expanded and formalized by me, B. Hansen (_Indy / Ferek Frostbeard). It draws on Warhammer Fantasy's Khazalid, Old Norse and Old Germanic roots, and the dictionary now holds over a thousand entries.
+This is a translator for **Dwed** (*Venekmar Dwedmarrum*), the language of the Dwed, a fantasy race of dwarves from [LotC](https://www.lordofthecraft.net/). Dwed was originally documented by chaotikal and has since been extensively expanded and formalized by me, B. Hansen (_Indy / Ferek Frostbeard). It draws on Warhammer Fantasy's Khazalid, Old Norse and Old Germanic roots, and the dictionary now holds over three thousand entries.
 
-The app has two tabs:
+The app has three tabs:
 
-- **Dictionary**: word-for-word translation between English and Dwed, with optional runic output.
-- **Sentence Builder**: a grammar-aware composer that walks you through tense, subject, verb, object and modifiers, and builds a properly formed Dwed sentence following the *Encyclopedia of Dwarven Language*.
+- **Dictionary**: Word-for-word translation between English and Dwed, with optional runic output.
+- **Sentence Builder**: A grammar-aware composer that walks you through tense, subject, verb, object and modifiers, and builds a properly formed Dwed sentence following the *Encyclopedia of Dwarven Language*.
+- **Runes**: This tab converts English Letters to Elder Futhark Runes. It does not translate words.
 
 <img width="400" height="650" alt="Dictionary Tab" src="https://github.com/user-attachments/assets/cbed9f80-ac49-48c8-9097-4495a558724f" /> <img width="400" height="650" alt="Sentence Tab" src="https://github.com/user-attachments/assets/2221376a-9382-45c3-a43d-c9830f108ea1" />
 
@@ -105,12 +106,12 @@ Every column other than `class`, `status` and `notes` is treated as a language. 
 
 # File breakdown
 
-1. **`DwedTranslator_v3_2.py`**: the main file. Run this one. It builds the window and both tabs.
-2. **`DICTIONARY_dwed.csv`**: the dictionary.
+1. **`DwedTranslator_v3_2_2.py`**: the main file. Run this one. It builds the window and both tabs.
+2. **`DICTIONARY_dwed_3511.csv`**: the dictionary.
 3. **`dwed_lexicon.py`**: loads the dictionary and handles lookups for both tabs.
 4. **`dwed_renderer.py`**: the grammar engine. Encodes the Codex's rules as Python functions that turn a sentence description into proper Dwed.
 5. **`dwed_runes.py`**: converts Latin script to Dwedic runes.
-6. **`legacy_grammar_notes.md`**: old grammar notes from the v2.1 dictionary, kept for history. The Codex supersedes them.
+6. **`legacy_grammar_notes.md`**: old grammar notes from the v2.1 dictionary, kept for history. The Encyclopedia rules supersedes them.
 
 Older versions (v3.1 and earlier, including the Excel dictionary) are on this repo's legacy branch.
 
