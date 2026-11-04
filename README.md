@@ -1,4 +1,4 @@
-# Dwed Translator v3.2
+# Dwed Translator v1.0
 ## Preface
 This is the result of several years of on-and-off work, refining methods, all for the sake of making the Dwed language more accessible for the common dwed player. There will be typos, and God help anyone who looks under the hood at my spaghetti code... I tried to make it clean and readable but my skills as a programmer have evolved quite a bit over the years, so some parts will be difficult to parse. Since I have worked on this entirely on my own, I'm sure others would be able to improve substantially upon what foundation I have laid. In any event, here is the sum of my work:
 
