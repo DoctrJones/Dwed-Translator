@@ -34,16 +34,16 @@ Not sure? Run `python -c "import tkinter"`. If it prints nothing, you're good.
 ## Running it
 
 1. Download the repo (green **Code** button → **Download ZIP**) and unzip it. All the files must stay together in the same folder.
-2. Double-click `DwedTranslator_v3_2.py`, or run it from a terminal in that folder:
+2. Double-click `DwedTranslator_v1_0.py`, or run it from a terminal in that folder:
 
    ```
-   python DwedTranslator_v3_2.py
+   python DwedTranslator_v1_0.py
    ```
 <img width="607" height="197" alt="image" src="https://github.com/user-attachments/assets/976bce3f-110f-4f6d-b788-5ab83e620abe" />
 
 No IDE required, though any IDE works fine too (I use [PyCharm](https://www.jetbrains.com/pycharm/), but it's dealer's choice). If something goes wrong at startup, the error appears in a popup instead of the window vanishing.
 
-**Tip (Windows):** rename the file to `DwedTranslator_v3_2.pyw` and it will open without the black console window behind it.
+**Tip (Windows):** rename the file to `DwedTranslator_v1_0.pyw` and it will open without the black console window behind it.
 
 # How to use
 
@@ -106,7 +106,7 @@ Every column other than `class`, `status` and `notes` is treated as a language. 
 
 # File breakdown
 
-1. **`DwedTranslator_v3_2_2.py`**: the main file. Run this one. It builds the window and both tabs.
+1. **`DwedTranslator_v1_0.py`**: the main file. Run this one. It builds the window and both tabs.
 2. **`DICTIONARY_dwed_3511.csv`**: the dictionary.
 3. **`dwed_lexicon.py`**: loads the dictionary and handles lookups for both tabs.
 4. **`dwed_renderer.py`**: the grammar engine. Encodes the Codex's rules as Python functions that turn a sentence description into proper Dwed.
