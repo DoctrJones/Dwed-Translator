@@ -10,7 +10,7 @@ or third-party libraries required.
 
 -----------------------------------------------------------------------------------------------------------------------
 =Header Info=
-This is the Dwed Translator v3.2, updated as of 20261020.
+This is the Dwed Translator v1.0, updated as of 20261103.
 The purpose of this program is to translate between English and Dwed,
 a fictional language that was originally documented by chaotikal, then
 extensively worked upon by me, B.Hansen AKA Doctor Jones AKA _Indy
